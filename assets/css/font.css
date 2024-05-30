@@ -1,0 +1,15 @@
+
+  @font-face {
+    font-family: IRAN;
+    src: url('../font/IRANSansWeb.woff')format('woff');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: IRAN;
+    src: url('../font/IRANSansWeb_Bold.woff')format('woff');
+    font-weight: bold;
+  }
+
+  body{
+    font-family: IRAN, sans-serif !important;
+  }
