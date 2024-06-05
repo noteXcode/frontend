@@ -8,5 +8,6 @@ type menuItem={
     href:string,
     title:string
 }
-const menuItems:menuItem[]=[{href:'#',title:'خانه'},{href:'#',title:'پست ها'},{href:'#',title:'درباره ما'},{href:'#',title:'تماس با ما'}]
+let language=useLanguage()
+const menuItems=computed<menuItem[]>(()=>[{href:'#',title:language.list.menu.home},{href:'#',title:language.list.menu.posts},{href:'#',title:language.list.menu.about},{href:'#',title:language.list.menu.contact}])
 </script>

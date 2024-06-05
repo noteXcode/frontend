@@ -13,12 +13,16 @@ export default defineNuxtConfig({
   },
 
   css:['~/assets/css/main.css'],
-  modules: ["@nuxt/ui",'@nuxtjs/color-mode'],
+  modules: ["@nuxt/ui",'@nuxtjs/color-mode','@pinia/nuxt'],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
+    autoImports:['defineStore']
   },
 
 })

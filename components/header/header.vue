@@ -3,7 +3,10 @@
         <Container >
            <div class="flex justify-between items-center h-20">
             <HeaderMenuDesktop/>
-            <ThemeChangeButton/>
+            <div class="flex">
+                <ThemeChangeButton/>
+                <HeaderLang/>
+            </div>
            </div>
         </Container>
     </div>
