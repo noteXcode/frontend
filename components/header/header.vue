@@ -6,6 +6,7 @@
             <div class="flex">
                 <ThemeChangeButton/>
                 <HeaderLang/>
+                <UserAuthModal/>
             </div>
            </div>
         </Container>
