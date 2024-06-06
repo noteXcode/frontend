@@ -2,10 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-    --blue:#1a56db ,
-    --blue2:
-}
+
 .dark {
     background-color: rgb(61, 61, 61);
   }

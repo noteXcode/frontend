@@ -8,10 +8,17 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      GOOGLECLIENTID:process.env.GOOGLE_CLIENT_ID
+      APPMODE:process.env.APP_MODE,
+      GOOGLECLIENTID:process.env.GOOGLE_CLIENT_ID,
+      HTTPURL:process.env.HTTPURL,
+      HTTPSURL:process.env.HTTPSURL,
+      LOCALURL:process.env.LOCALURL
+
     },
   },
-
+  ui: {
+    safelistColors: ['customPrimary','customGray']
+  },
   css:['~/assets/css/main.css'],
   modules: ["@nuxt/ui",'@nuxtjs/color-mode','@pinia/nuxt'],
   postcss: {
@@ -24,7 +31,5 @@ export default defineNuxtConfig({
     storesDirs: ['./stores/**'],
     autoImports:['defineStore']
   },
-  ui: {
-    safelistColors: ['blue']
-  }
+
 })

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import appConfig from "~/app.config"
+
 const language=useLanguage()
 const state = reactive({
   firstName:undefined,
@@ -7,6 +9,7 @@ const state = reactive({
   password: undefined,
   cpassword: undefined
 })
+appConfig.ui.primary='customPrimary'
 </script>
 
 <template>

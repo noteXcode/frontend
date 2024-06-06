@@ -22,8 +22,8 @@ export default{
         signinUp:'signIn/signUp'
     },
     title:{
-        signup:'',
-        signin:'',
-        verify:''
+        signup:'create new account',
+        signin:'sign in your account',
+        verify:'enter verify code'
     }
 }
