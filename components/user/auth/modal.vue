@@ -2,27 +2,23 @@
 const isOpen = ref(false)
 const tabs = {}
 const test=ref()
-const isRegister = ref(false)
+let isRegister = ref(false)
 const signin = resolveComponent('UserAuthSignIn')
 const signup = resolveComponent('UserAuthSignUp')
 const language = useLanguage()
-const items = computed<{label:string,isRegister:boolean}[]>(() => [{
+const items = computed<{label:string}[]>(() => [{
     label: language.list.title.signin,
-    isRegister:true
 }, {
-    label: language.list.title.signup,
-    isRegister:false
-}]
-)
+    label: language.list.title.signup
+}])
 function changeComponent(index:number){
-console.log("🚀 ~ changeComponent ~ index:", index,items)
-isRegister.value=items[index].isRegister
+    isRegister.value=!isRegister.value
 }
 </script>
 
 <template>
     <div>
-        <UButton label="Open" @click="isOpen = true" />
+        <UButton  :label="language.list.btn.signinUp" @click="isOpen = true" />
         <UModal v-model="isOpen">
             <UTabs :items="items" @change="changeComponent" />
             <div @click="isRegister = !isRegister">ssssssssssssss</div>

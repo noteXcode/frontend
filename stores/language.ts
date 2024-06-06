@@ -23,7 +23,8 @@ export const useLanguage = defineStore('language', () => {
             authGoogle:string,
             signin:string,
             signup:string,
-            cancel:string
+            cancel:string,
+            signinUp:string
         },
         title:{
             signup:string,

@@ -18,7 +18,8 @@ export default{
         authGoogle:'ورود با حساب گوگل',
         signin:'ثبت نام',
         signup:'ورود',
-        cancel:'لغو'
+        cancel:'لغو',
+        signinUp:'ورود/ثبت نام'
     },
     title:{
         signup:'ورود با حساب کاربری',

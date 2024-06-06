@@ -18,7 +18,8 @@ export default{
         authGoogle:'sign in with google',
         signin:'sign in',
         signup:'sign up',
-        cancel:'cancel'
+        cancel:'cancel',
+        signinUp:'signIn/signUp'
     },
     title:{
         signup:'',

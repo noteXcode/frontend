@@ -4,7 +4,8 @@ const state = reactive({
   firstName:undefined,
   lastName:undefined,
   email: undefined,
-  password: undefined
+  password: undefined,
+  cpassword: undefined
 })
 </script>
 
@@ -14,8 +15,19 @@ const state = reactive({
           <UFormGroup :label="language.list.filds.email" name="email">
             <UInput v-model="state.email" />
           </UFormGroup>      
+          <UFormGroup :label="language.list.filds.firstName" name="lastName">
+            <UInput v-model="state.firstName" />
+          </UFormGroup>
+          <UFormGroup :label="language.list.filds.lastName" name="email">
+            <UInput v-model="state.lastName" />
+          </UFormGroup>  
+          <UFormGroup :label="language.list.filds.password" name="email">
+            <UInput v-model="state.password" />
+          </UFormGroup>  
+          <UFormGroup :label="language.list.filds.confirmPassrord" name="email">
+            <UInput v-model="state.cpassword" />
+          </UFormGroup>  
         </UForm>
-        
         <template #footer>
           <UButton type="submit">
             {{language.list.btn.signup}}

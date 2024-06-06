@@ -24,5 +24,7 @@ export default defineNuxtConfig({
     storesDirs: ['./stores/**'],
     autoImports:['defineStore']
   },
-
+  ui: {
+    safelistColors: ['blue']
+  }
 })
