@@ -2,11 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.dark {
-    background-color: rgb(61, 61, 61);
+:root{
+  --ui-background: '255 255 255';
+  --ui-forground:var(--color-gray-700);
+}
+.dark{
+    --ui-background:var(--color-gray-900) ;
+    --ui-forground:var(--color-gray-200);
   }
 html {
-   background-color: #f9fafb;
    direction: rtl;
+}
+
+body{
+  background-color:rgb( var(--ui-background));
+  color:rgb( var(--ui-));
 }

@@ -7,6 +7,7 @@
                 <ThemeChangeButton/>
                 <HeaderLang/>
                 <UserAuthModal/>
+                <ThemeColorPicker/>
             </div>
            </div>
         </Container>

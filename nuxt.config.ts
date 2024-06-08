@@ -17,7 +17,11 @@ export default defineNuxtConfig({
     },
   },
   ui: {
-    safelistColors: ['customPrimary','customGray']
+    safelistColors: ['customPrimary','customGray'],
+    global: true,
+  },
+  colorMode: {
+    preference: 'light'
   },
   css:['~/assets/css/main.css'],
   modules: ["@nuxt/ui",'@nuxtjs/color-mode','@pinia/nuxt'],
@@ -31,5 +35,7 @@ export default defineNuxtConfig({
     storesDirs: ['./stores/**'],
     autoImports:['defineStore']
   },
-
+  typescript: {
+    strict: false
+  },
 })
